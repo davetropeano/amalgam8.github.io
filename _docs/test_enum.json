@@ -49,7 +49,7 @@
           "200": {
             "description": "Successfully added rules.",
             "schema": {
-              "$ref": "#/definitions/people"
+              "$ref": "#/definitions/person"
             }
           }
         }
