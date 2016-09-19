@@ -48,7 +48,7 @@
       "type": "object",
       "enum": [ 
         {"$ref": "#/definitions/adult"}, 
-        {"$ref": "#/definitiokns/child"} 
+        {"$ref": "#/definitions/child"} 
       ]
     },
     "adult": {
