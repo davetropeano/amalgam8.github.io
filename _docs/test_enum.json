@@ -1,0 +1,70 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Test enum",
+    "description": "Swagger spec to test swaggerui / loopback with enums in spec",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/people": {
+      "parameters": [],
+      "get": {
+        "summary": "get an array of people",
+        "description": "Get an array of people.\n",
+        "responses": {
+          "200": {
+            "description": "Successfully added rules.",
+            "schema": {
+              "$ref": "#/definitions/people"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "people": {
+      "title": "People",
+      "description": "Persons",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/person"
+      }
+    },
+    "person" : {
+      "title": "Person",
+      "description": "A person. kid or adult",
+      "type": "object",
+      "enum": [ adult, child ]
+    },
+    "adult": {
+      "title": "Adult",
+      "description": "person over 18",
+      "type": "object",
+      "properties" : {
+        "name": { "type": "string" },
+        "facebook": { "type": "string" }
+      }
+    },
+    "child": {
+      "title": "Child",
+      "description": "person over 18",
+      "type": "object",
+      "properties" : {
+        "name": { "type": "string" },
+        "instagram": { "type": "string" }
+      }
+    }
+  }
+}
