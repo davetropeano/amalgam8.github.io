@@ -634,9 +634,9 @@
       "description": "Action to apply to matching requests",
       "type": "object",
       "enum": [ 
-        {"delayAction": {"$ref": "#/definitions/delayAction"}}, 
-        {"abortAction": {"$ref": "#/definitions/abortAction"}},
-        {"traceAction": {"$ref": "#/definitions/traceAction"}}
+        "#/definitions/delayAction", 
+        "#/definitions/abortAction",
+        "#/definitions/traceAction"
         ]
     },
     "delayAction": {
