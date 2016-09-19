@@ -43,8 +43,8 @@
         }
       ],
       "get": {
-        "summary": "get an array of people",
-        "description": "Get an array of people.\n",
+        "summary": "get a person by id",
+        "description": "Get a person by id.\n",
         "responses": {
           "200": {
             "description": "Successfully added rules.",
