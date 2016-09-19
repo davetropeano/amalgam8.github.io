@@ -46,7 +46,10 @@
       "title": "Person",
       "description": "A person. kid or adult",
       "type": "object",
-      "enum": [ adult, child ]
+      "enum": [ 
+        {"$ref": "#/definitions/adult"}, 
+        {"$ref": "#/definitiokns/child"} 
+      ]
     },
     "adult": {
       "title": "Adult",
