@@ -31,6 +31,29 @@
           }
         }
       }
+    },
+    "/v1/people/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "person uuid",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "get an array of people",
+        "description": "Get an array of people.\n",
+        "responses": {
+          "200": {
+            "description": "Successfully added rules.",
+            "schema": {
+              "$ref": "#/definitions/people"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -56,8 +79,8 @@
       "description": "person over 18",
       "type": "object",
       "properties" : {
-        "name": { "type": "string" },
-        "facebook": { "type": "string" }
+        "name": {"type": "string"},
+        "facebook": {"type": "string"}
       }
     },
     "child": {
@@ -65,8 +88,8 @@
       "description": "person over 18",
       "type": "object",
       "properties" : {
-        "name": { "type": "string" },
-        "instagram": { "type": "string" }
+        "name": {"type": "string"},
+        "instagram": {"type": "string"}
       }
     }
   }
